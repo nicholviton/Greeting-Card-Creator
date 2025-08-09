@@ -1,0 +1,223 @@
+{
+  "id": "blank-canvas-01",
+  "name": "Blank Canvas",
+  "category": "blank",
+  "description": "Clean blank template for complete customization",
+  "thumbnail": "/assets/templates/thumbnails/blank-canvas-01.jpg",
+  "author": "Greeting Card Creator",
+  "createdAt": "2025-08-09T00:00:00Z",
+  "panels": {
+    "front": {
+      "id": "front",
+      "name": "Front Cover",
+      "background": {
+        "type": "color",
+        "value": "#FFFFFF",
+        "opacity": 1
+      },
+      "dimensions": {
+        "width": 1275,
+        "height": 1650
+      },
+      "textSlots": [
+        {
+          "id": "front-main-text",
+          "placeholder": "Your message here",
+          "position": {
+            "x": 100,
+            "y": 750
+          },
+          "size": {
+            "width": 1075,
+            "height": 150
+          },
+          "maxLength": 100,
+          "defaultFont": "Arial",
+          "defaultSize": "large",
+          "defaultColor": "#000000",
+          "textAlign": "center",
+          "lineHeight": 1.2
+        }
+      ],
+      "imageSlots": [
+        {
+          "id": "front-main-image",
+          "position": {
+            "x": 300,
+            "y": 400
+          },
+          "size": {
+            "width": 675,
+            "height": 675
+          },
+          "shape": "rectangle",
+          "placeholder": "Add your image",
+          "aspectRatio": "square",
+          "allowedFormats": ["jpeg", "jpg", "png", "webp"],
+          "maxFileSize": 8388608
+        }
+      ]
+    },
+    "back": {
+      "id": "back",
+      "name": "Back Cover",
+      "background": {
+        "type": "color",
+        "value": "#FFFFFF",
+        "opacity": 1
+      },
+      "dimensions": {
+        "width": 1275,
+        "height": 1650
+      },
+      "textSlots": [
+        {
+          "id": "back-text",
+          "placeholder": "Back message (optional)",
+          "position": {
+            "x": 100,
+            "y": 1500
+          },
+          "size": {
+            "width": 1075,
+            "height": 100
+          },
+          "maxLength": 80,
+          "defaultFont": "Arial",
+          "defaultSize": "small",
+          "defaultColor": "#666666",
+          "textAlign": "center",
+          "lineHeight": 1.4
+        }
+      ],
+      "imageSlots": []
+    },
+    "insideLeft": {
+      "id": "insideLeft",
+      "name": "Inside Left",
+      "background": {
+        "type": "color",
+        "value": "#FFFFFF",
+        "opacity": 1
+      },
+      "dimensions": {
+        "width": 1275,
+        "height": 1650
+      },
+      "textSlots": [
+        {
+          "id": "inside-left-text",
+          "placeholder": "Write your message here",
+          "position": {
+            "x": 100,
+            "y": 300
+          },
+          "size": {
+            "width": 1075,
+            "height": 800
+          },
+          "maxLength": 500,
+          "defaultFont": "Arial",
+          "defaultSize": "medium",
+          "defaultColor": "#000000",
+          "textAlign": "left",
+          "lineHeight": 1.6
+        }
+      ],
+      "imageSlots": [
+        {
+          "id": "inside-left-image",
+          "position": {
+            "x": 200,
+            "y": 1200
+          },
+          "size": {
+            "width": 875,
+            "height": 350
+          },
+          "shape": "rectangle",
+          "placeholder": "Add image (optional)",
+          "aspectRatio": "5:2",
+          "allowedFormats": ["jpeg", "jpg", "png", "webp"],
+          "maxFileSize": 6291456
+        }
+      ]
+    },
+    "insideRight": {
+      "id": "insideRight",
+      "name": "Inside Right",
+      "background": {
+        "type": "color",
+        "value": "#FFFFFF",
+        "opacity": 1
+      },
+      "dimensions": {
+        "width": 1275,
+        "height": 1650
+      },
+      "textSlots": [
+        {
+          "id": "inside-right-text",
+          "placeholder": "Continue your message here",
+          "position": {
+            "x": 100,
+            "y": 300
+          },
+          "size": {
+            "width": 1075,
+            "height": 600
+          },
+          "maxLength": 400,
+          "defaultFont": "Arial",
+          "defaultSize": "medium",
+          "defaultColor": "#000000",
+          "textAlign": "left",
+          "lineHeight": 1.6
+        },
+        {
+          "id": "inside-right-signature",
+          "placeholder": "Your name",
+          "position": {
+            "x": 100,
+            "y": 1300
+          },
+          "size": {
+            "width": 1075,
+            "height": 100
+          },
+          "maxLength": 50,
+          "defaultFont": "Arial",
+          "defaultSize": "medium",
+          "defaultColor": "#000000",
+          "textAlign": "right",
+          "lineHeight": 1.5
+        }
+      ],
+      "imageSlots": [
+        {
+          "id": "inside-right-image",
+          "position": {
+            "x": 400,
+            "y": 1000
+          },
+          "size": {
+            "width": 475,
+            "height": 200
+          },
+          "shape": "rectangle",
+          "placeholder": "Add decorative image",
+          "aspectRatio": "2.4:1",
+          "allowedFormats": ["jpeg", "jpg", "png", "webp"],
+          "maxFileSize": 4194304
+        }
+      ]
+    }
+  },
+  "metadata": {
+    "version": "1.0.0",
+    "tags": ["blank", "custom", "freestyle", "creative"],
+    "difficulty": "beginner",
+    "estimatedTime": 15,
+    "colorScheme": ["#FFFFFF", "#000000", "#666666"]
+  }
+}

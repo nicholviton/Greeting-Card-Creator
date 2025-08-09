@@ -18,7 +18,29 @@ export default defineConfig({
     outDir: 'dist',
     assetsDir: 'assets',
     sourcemap: false,
+    rollupOptions: {
+      output: {
+        // Organize assets by type
+        assetFileNames: (assetInfo) => {
+          const info = assetInfo.name!.split('.')
+          const extType = info[info.length - 1]
+          if (/png|jpe?g|svg|gif|tiff|bmp|ico/i.test(extType)) {
+            return `assets/images/[name]-[hash][extname]`
+          }
+          if (/css/i.test(extType)) {
+            return `assets/css/[name]-[hash][extname]`
+          }
+          return `assets/[name]-[hash][extname]`
+        },
+      },
+    },
   },
+  // Optimize for canvas and image handling
+  optimizeDeps: {
+    include: ['jspdf', 'html2canvas'],
+  },
+  // Configure asset handling for templates and images
+  assetsInclude: ['**/*.json', '**/*.png', '**/*.jpg', '**/*.jpeg', '**/*.webp'],
   server: {
     port: 3000,
     open: true,

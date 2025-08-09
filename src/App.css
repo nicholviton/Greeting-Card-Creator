@@ -114,6 +114,47 @@ input, textarea {
   font-size: 1.1rem;
 }
 
+/* Template Gallery Specific Styles */
+.template-gallery {
+  text-align: left;
+}
+
+.template-list {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.template-item {
+  border: 1px solid var(--border-color);
+  padding: 1rem;
+  border-radius: var(--border-radius);
+  background: var(--card-background);
+  box-shadow: var(--shadow);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.template-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+.template-item h4 {
+  margin: 0 0 0.5rem 0;
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.template-item p {
+  margin: 0.25rem 0;
+  font-size: 0.9rem;
+}
+
+.template-item small {
+  color: var(--text-secondary);
+  font-size: 0.8rem;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .app-header {

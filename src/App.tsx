@@ -1,13 +1,67 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import './App.css'
+import { getAllTemplates, getAllCategories, getTemplatesByCategory, Template } from './data'
 
 // Temporary placeholder components for initial setup
-const TemplateGallery = () => (
-  <div className="template-gallery">
-    <h2>Template Gallery</h2>
-    <p>Template selection will go here</p>
-  </div>
-)
+const TemplateGallery = () => {
+  const [templates, setTemplates] = useState<Template[]>([]);
+  const [loading, setLoading] = useState(true);
+  const categories = getAllCategories();
+  
+  useEffect(() => {
+    const loadTemplates = async () => {
+      try {
+        const loadedTemplates = await getAllTemplates();
+        setTemplates(loadedTemplates);
+      } catch (error) {
+        console.error('Failed to load templates:', error);
+      } finally {
+        setLoading(false);
+      }
+    };
+    
+    loadTemplates();
+  }, []);
+  
+  if (loading) {
+    return (
+      <div className="template-gallery">
+        <h2>Template Gallery</h2>
+        <p>Loading templates...</p>
+      </div>
+    );
+  }
+  
+  return (
+    <div className="template-gallery">
+      <h2>Template Gallery</h2>
+      <p>Total templates: {templates.length}</p>
+      <h3>Categories:</h3>
+      <ul>
+        {categories.map(category => {
+          const count = category === 'all' ? templates.length : 
+                       templates.filter(t => t.category === category).length;
+          return (
+            <li key={category}>
+              {category}: {count} template{count !== 1 ? 's' : ''}
+            </li>
+          )
+        })}
+      </ul>
+      <h3>Available Templates:</h3>
+      <div className="template-list">
+        {templates.map(template => (
+          <div key={template.id} className="template-item">
+            <h4>{template.name}</h4>
+            <p>Category: {template.category}</p>
+            <p>{template.description}</p>
+            <small>Created: {template.createdAt?.toLocaleDateString() || 'Unknown'}</small>
+          </div>
+        ))}
+      </div>
+    </div>
+  )
+}
 
 const CardEditor = () => (
   <div className="card-editor">

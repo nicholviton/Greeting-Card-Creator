@@ -1,0 +1,248 @@
+{
+  "id": "birthday-balloons-01",
+  "name": "Birthday Balloons",
+  "category": "birthday",
+  "description": "Cheerful birthday card with colorful balloons and festive design",
+  "thumbnail": "/assets/templates/thumbnails/birthday-balloons-01.jpg",
+  "author": "Greeting Card Creator",
+  "createdAt": "2025-08-09T00:00:00Z",
+  "panels": {
+    "front": {
+      "id": "front",
+      "name": "Front Cover",
+      "background": {
+        "type": "gradient",
+        "value": "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
+        "opacity": 1
+      },
+      "dimensions": {
+        "width": 1275,
+        "height": 1650
+      },
+      "textSlots": [
+        {
+          "id": "front-greeting",
+          "placeholder": "Happy Birthday!",
+          "position": {
+            "x": 150,
+            "y": 300
+          },
+          "size": {
+            "width": 975,
+            "height": 120
+          },
+          "maxLength": 50,
+          "defaultFont": "Comic Sans MS",
+          "defaultSize": "extra-large",
+          "defaultColor": "#FFFFFF",
+          "textAlign": "center",
+          "lineHeight": 1.2,
+          "bounds": {
+            "minX": 50,
+            "minY": 250,
+            "maxX": 1225,
+            "maxY": 450
+          }
+        },
+        {
+          "id": "front-name",
+          "placeholder": "Your Name",
+          "position": {
+            "x": 150,
+            "y": 1400
+          },
+          "size": {
+            "width": 975,
+            "height": 80
+          },
+          "maxLength": 30,
+          "defaultFont": "Arial",
+          "defaultSize": "large",
+          "defaultColor": "#FFFFFF",
+          "textAlign": "center",
+          "lineHeight": 1.1
+        }
+      ],
+      "imageSlots": [
+        {
+          "id": "front-decoration",
+          "position": {
+            "x": 400,
+            "y": 600
+          },
+          "size": {
+            "width": 475,
+            "height": 475
+          },
+          "shape": "circle",
+          "placeholder": "Add a fun photo or leave empty for balloons decoration",
+          "aspectRatio": "square",
+          "allowedFormats": ["jpeg", "jpg", "png", "webp"],
+          "maxFileSize": 5242880
+        }
+      ]
+    },
+    "back": {
+      "id": "back",
+      "name": "Back Cover",
+      "background": {
+        "type": "color",
+        "value": "#F8F9FA",
+        "opacity": 1
+      },
+      "dimensions": {
+        "width": 1275,
+        "height": 1650
+      },
+      "textSlots": [
+        {
+          "id": "back-message",
+          "placeholder": "Made with love using Greeting Card Creator",
+          "position": {
+            "x": 100,
+            "y": 1500
+          },
+          "size": {
+            "width": 1075,
+            "height": 100
+          },
+          "maxLength": 100,
+          "defaultFont": "Arial",
+          "defaultSize": "small",
+          "defaultColor": "#6B7280",
+          "textAlign": "center",
+          "lineHeight": 1.4
+        }
+      ],
+      "imageSlots": []
+    },
+    "insideLeft": {
+      "id": "insideLeft",
+      "name": "Inside Left",
+      "background": {
+        "type": "color",
+        "value": "#FFFFFF",
+        "opacity": 1
+      },
+      "dimensions": {
+        "width": 1275,
+        "height": 1650
+      },
+      "textSlots": [
+        {
+          "id": "inside-left-message",
+          "placeholder": "Hope your special day brings you happiness and joy!",
+          "position": {
+            "x": 100,
+            "y": 200
+          },
+          "size": {
+            "width": 1075,
+            "height": 400
+          },
+          "maxLength": 200,
+          "defaultFont": "Georgia",
+          "defaultSize": "medium",
+          "defaultColor": "#374151",
+          "textAlign": "left",
+          "lineHeight": 1.6
+        }
+      ],
+      "imageSlots": [
+        {
+          "id": "inside-left-photo",
+          "position": {
+            "x": 200,
+            "y": 800
+          },
+          "size": {
+            "width": 875,
+            "height": 600
+          },
+          "shape": "rounded-rectangle",
+          "borderRadius": 20,
+          "placeholder": "Add a memorable photo",
+          "aspectRatio": "4:3",
+          "allowedFormats": ["jpeg", "jpg", "png", "webp"],
+          "maxFileSize": 5242880
+        }
+      ]
+    },
+    "insideRight": {
+      "id": "insideRight",
+      "name": "Inside Right",
+      "background": {
+        "type": "color",
+        "value": "#FFFFFF",
+        "opacity": 1
+      },
+      "dimensions": {
+        "width": 1275,
+        "height": 1650
+      },
+      "textSlots": [
+        {
+          "id": "inside-right-wishes",
+          "placeholder": "Wishing you all the best on your birthday and always!",
+          "position": {
+            "x": 100,
+            "y": 200
+          },
+          "size": {
+            "width": 1075,
+            "height": 300
+          },
+          "maxLength": 150,
+          "defaultFont": "Georgia",
+          "defaultSize": "medium",
+          "defaultColor": "#374151",
+          "textAlign": "left",
+          "lineHeight": 1.6
+        },
+        {
+          "id": "inside-right-signature",
+          "placeholder": "With love,\nYour Friend",
+          "position": {
+            "x": 100,
+            "y": 1200
+          },
+          "size": {
+            "width": 1075,
+            "height": 150
+          },
+          "maxLength": 100,
+          "defaultFont": "Georgia",
+          "defaultSize": "medium",
+          "defaultColor": "#374151",
+          "textAlign": "right",
+          "lineHeight": 1.4
+        }
+      ],
+      "imageSlots": [
+        {
+          "id": "inside-right-decoration",
+          "position": {
+            "x": 875,
+            "y": 600
+          },
+          "size": {
+            "width": 300,
+            "height": 300
+          },
+          "shape": "circle",
+          "placeholder": "Small decorative image",
+          "aspectRatio": "square",
+          "allowedFormats": ["jpeg", "jpg", "png", "webp"],
+          "maxFileSize": 2097152
+        }
+      ]
+    }
+  },
+  "metadata": {
+    "version": "1.0.0",
+    "tags": ["birthday", "balloons", "colorful", "fun", "celebration"],
+    "difficulty": "beginner",
+    "estimatedTime": 10,
+    "colorScheme": ["#667eea", "#764ba2", "#FFFFFF", "#374151"]
+  }
+}

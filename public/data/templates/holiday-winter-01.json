@@ -1,0 +1,225 @@
+{
+  "id": "holiday-winter-01",
+  "name": "Winter Wonderland",
+  "category": "holiday",
+  "description": "Elegant winter holiday card with snowflake design and warm wishes",
+  "thumbnail": "/assets/templates/thumbnails/holiday-winter-01.jpg",
+  "author": "Greeting Card Creator",
+  "createdAt": "2025-08-09T00:00:00Z",
+  "panels": {
+    "front": {
+      "id": "front",
+      "name": "Front Cover",
+      "background": {
+        "type": "gradient",
+        "value": "linear-gradient(180deg, #1e3a8a 0%, #3730a3 50%, #1e1b4b 100%)",
+        "opacity": 1
+      },
+      "dimensions": {
+        "width": 1275,
+        "height": 1650
+      },
+      "textSlots": [
+        {
+          "id": "front-holiday-greeting",
+          "placeholder": "Happy Holidays",
+          "position": {
+            "x": 150,
+            "y": 250
+          },
+          "size": {
+            "width": 975,
+            "height": 120
+          },
+          "maxLength": 40,
+          "defaultFont": "Georgia",
+          "defaultSize": "extra-large",
+          "defaultColor": "#F8FAFC",
+          "textAlign": "center",
+          "lineHeight": 1.2
+        },
+        {
+          "id": "front-year",
+          "placeholder": "2025",
+          "position": {
+            "x": 150,
+            "y": 1450
+          },
+          "size": {
+            "width": 975,
+            "height": 80
+          },
+          "maxLength": 10,
+          "defaultFont": "Georgia",
+          "defaultSize": "large",
+          "defaultColor": "#E5E7EB",
+          "textAlign": "center",
+          "lineHeight": 1.1
+        }
+      ],
+      "imageSlots": [
+        {
+          "id": "front-snowflake",
+          "position": {
+            "x": 437,
+            "y": 700
+          },
+          "size": {
+            "width": 400,
+            "height": 400
+          },
+          "shape": "rectangle",
+          "placeholder": "Snowflake or winter decoration",
+          "aspectRatio": "square",
+          "allowedFormats": ["png", "webp"],
+          "maxFileSize": 3145728
+        }
+      ]
+    },
+    "back": {
+      "id": "back",
+      "name": "Back Cover",
+      "background": {
+        "type": "color",
+        "value": "#F1F5F9",
+        "opacity": 1
+      },
+      "dimensions": {
+        "width": 1275,
+        "height": 1650
+      },
+      "textSlots": [
+        {
+          "id": "back-credits",
+          "placeholder": "Warmest wishes from our family to yours",
+          "position": {
+            "x": 100,
+            "y": 1500
+          },
+          "size": {
+            "width": 1075,
+            "height": 100
+          },
+          "maxLength": 80,
+          "defaultFont": "Georgia",
+          "defaultSize": "small",
+          "defaultColor": "#475569",
+          "textAlign": "center",
+          "lineHeight": 1.4
+        }
+      ],
+      "imageSlots": []
+    },
+    "insideLeft": {
+      "id": "insideLeft",
+      "name": "Inside Left",
+      "background": {
+        "type": "color",
+        "value": "#FFFFFF",
+        "opacity": 1
+      },
+      "dimensions": {
+        "width": 1275,
+        "height": 1650
+      },
+      "textSlots": [
+        {
+          "id": "inside-left-wishes",
+          "placeholder": "May this holiday season bring you peace, joy, and happiness. Wishing you and your loved ones a wonderful celebration and a bright new year ahead.",
+          "position": {
+            "x": 100,
+            "y": 300
+          },
+          "size": {
+            "width": 1075,
+            "height": 600
+          },
+          "maxLength": 300,
+          "defaultFont": "Georgia",
+          "defaultSize": "medium",
+          "defaultColor": "#1F2937",
+          "textAlign": "left",
+          "lineHeight": 1.8
+        }
+      ],
+      "imageSlots": []
+    },
+    "insideRight": {
+      "id": "insideRight",
+      "name": "Inside Right",
+      "background": {
+        "type": "color",
+        "value": "#FFFFFF",
+        "opacity": 1
+      },
+      "dimensions": {
+        "width": 1275,
+        "height": 1650
+      },
+      "textSlots": [
+        {
+          "id": "inside-right-family-photo-caption",
+          "placeholder": "Our holiday memories",
+          "position": {
+            "x": 100,
+            "y": 200
+          },
+          "size": {
+            "width": 1075,
+            "height": 80
+          },
+          "maxLength": 50,
+          "defaultFont": "Georgia",
+          "defaultSize": "medium",
+          "defaultColor": "#374151",
+          "textAlign": "center",
+          "lineHeight": 1.4
+        },
+        {
+          "id": "inside-right-signature",
+          "placeholder": "With warm holiday wishes,\nThe Smith Family",
+          "position": {
+            "x": 100,
+            "y": 1300
+          },
+          "size": {
+            "width": 1075,
+            "height": 150
+          },
+          "maxLength": 120,
+          "defaultFont": "Georgia",
+          "defaultSize": "medium",
+          "defaultColor": "#1F2937",
+          "textAlign": "center",
+          "lineHeight": 1.5
+        }
+      ],
+      "imageSlots": [
+        {
+          "id": "inside-right-family-photo",
+          "position": {
+            "x": 187,
+            "y": 350
+          },
+          "size": {
+            "width": 900,
+            "height": 675
+          },
+          "shape": "rounded-rectangle",
+          "borderRadius": 15,
+          "placeholder": "Add your family holiday photo",
+          "aspectRatio": "4:3",
+          "allowedFormats": ["jpeg", "jpg", "png", "webp"],
+          "maxFileSize": 5242880
+        }
+      ]
+    }
+  },
+  "metadata": {
+    "version": "1.0.0",
+    "tags": ["holiday", "winter", "christmas", "elegant", "family"],
+    "difficulty": "beginner",
+    "estimatedTime": 15,
+    "colorScheme": ["#1e3a8a", "#3730a3", "#1e1b4b", "#F8FAFC", "#1F2937"]
+  }
+}

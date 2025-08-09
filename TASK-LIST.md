@@ -1,38 +1,35 @@
-# Greeting Card Creator - Detailed Task List (MVP)
+# Greeting Card Creator - Detailed Task List (MVP) - **PRIORITIZED FOR VISUAL DEVELOPMENT**
 
 ## Overview
 **Total Timeline**: 9 weeks  
-**Development Approach**: 4 phases with detailed task breakdown  
+**Development Approach**: 4 phases with **CANVAS RENDERING PRIORITIZED**  
 **Target**: Single developer implementation  
+**Current Focus**: 🎨 **Visual template rendering and preview system**
 
 ---
 
-## 📋 Phase 1: Foundation (Weeks 1-2)
+## 📋 Phase 1: Foundation & Visual Preview (Weeks 1-3) **[RESTRUCTURED]**
 
-### Week 1: Project Setup & Core Infrastructure
+### Week 1: Project Setup & Core Infrastructure **[COMPLETED]**
 
 #### 1.1 Project Initialization
-- [ ] **Task 1.1.1**: Initialize Vite React TypeScript project
+- [x] **Task 1.1.1**: Initialize Vite React TypeScript project
   - Create new Vite project with React TypeScript template
   - Configure basic folder structure (`src/components`, `src/types`, `src/data`, `src/utils`)
   - Set up Git repository and initial commit
   - **Estimated Time**: 2 hours
+  - **Status**: ✅ COMPLETED
 
-- [ ] **Task 1.1.2**: Configure development environment
+- [x] **Task 1.1.2**: Configure development environment
   - Install and configure ESLint with React rules
   - Set up Prettier for code formatting
   - Configure TypeScript strict mode
   - Add pre-commit hooks with Husky
   - **Estimated Time**: 3 hours
+  - **Status**: ✅ COMPLETED
 
-- [ ] **Task 1.1.3**: Set up basic dependencies
-  - Install core dependencies: `jspdf`, `html2canvas`
-  - Install dev dependencies: `@types/node`, CSS modules support
-  - Configure Vite for static asset handling
-  - **Estimated Time**: 1 hour
-
-#### 1.2 Type Definitions & Data Models
-- [ ] **Task 1.2.1**: Create core TypeScript interfaces
+#### 1.2 Type Definitions & Data Models **[COMPLETED]**
+- [x] **Task 1.2.1**: Create core TypeScript interfaces
   ```typescript
   // src/types/index.ts
   interface Template { /* ... */ }
@@ -41,159 +38,289 @@
   interface ImageSlot { /* ... */ }
   ```
   - **Estimated Time**: 4 hours
+  - **Status**: ✅ COMPLETED
 
-- [ ] **Task 1.2.2**: Create template data structure
+- [x] **Task 1.2.2**: Create template data structure
   - Design JSON schema for templates
   - Create sample template data files
   - Implement template validation utilities
   - **Estimated Time**: 3 hours
+  - **Status**: ✅ COMPLETED
 
-#### 1.3 Basic Component Structure
-- [ ] **Task 1.3.1**: Create main App component
-  - Set up main application layout
-  - Add basic routing between views (template gallery, editor, export)
-  - Implement simple state management with useState
-  - **Estimated Time**: 4 hours
+**Week 1 Total**: ~12 hours ✅ COMPLETED
 
-- [ ] **Task 1.3.2**: Create basic CSS framework
-  - Set up CSS modules configuration
-  - Create global styles and CSS variables
-  - Design responsive grid system
-  - Create utility classes for common styles
-  - **Estimated Time**: 5 hours
+### Week 2: 🎨 **PRIORITY: Canvas Rendering & Visual Preview System**
 
-**Week 1 Total**: ~22 hours
+#### 1.3 **[MOVED UP]** Canvas Rendering Foundation 
+- [x] **Task 1.3.1**: Set up canvas dependencies **[PRIORITY]**
+  - Install core dependencies: `jspdf`, `html2canvas`
+  - Install dev dependencies: `@types/node`, Canvas support
+  - Configure Vite for static asset handling
+  - **Estimated Time**: 1 hour
+  - **Status**: ✅ COMPLETED
 
-### Week 2: Template Gallery & Navigation
-
-#### 1.4 Template Gallery Implementation
-- [ ] **Task 1.4.1**: Create template data files
-  - Design 5 initial templates (Birthday, Holiday, Thank You, Get Well, Blank)
-  - Create high-quality background images (or source free images)
-  - Generate thumbnail images for gallery display
-  - **Estimated Time**: 8 hours
-
-- [ ] **Task 1.4.2**: Build TemplateGallery component
-  - Create grid layout for template thumbnails
-  - Implement category filtering (All, Birthday, Holiday, etc.)
-  - Add template search functionality
-  - Style with hover effects and selection states
+- [ ] **Task 1.3.2**: Create basic panel renderer **[PRIORITY]**
+  - Implement DOM-to-canvas conversion for single panel
+  - Handle template background rendering (colors/gradients)
+  - Render basic panel structure and dimensions
+  - Create canvas component foundation
   - **Estimated Time**: 6 hours
 
-- [ ] **Task 1.4.3**: Create TemplateCard component
-  - Design individual template preview cards
-  - Add template metadata display (name, category)
-  - Implement click-to-select functionality
-  - Add loading states for template images
-  - **Estimated Time**: 4 hours
-
-#### 1.5 Basic Template Preview
-- [ ] **Task 1.5.1**: Create TemplatePreview component
-  - Display selected template in preview mode
+- [ ] **Task 1.3.3**: Implement template visual preview **[PRIORITY]**
+  - Display rendered template panels as visual previews
   - Show all 4 panels (front, back, inside left, inside right)
   - Implement panel navigation tabs
-  - Add basic zoom/fit controls
+  - Add basic zoom/fit controls for preview
+  - **Estimated Time**: 5 hours
+
+#### 1.4 **[MOVED UP]** Text and Image Slot Rendering
+- [ ] **Task 1.4.1**: Render text slots on canvas **[PRIORITY]**
+  - Render placeholder text in defined slot positions
+  - Handle font rendering with web-safe fonts
+  - Implement text sizing and positioning
+  - Apply text colors and alignment
   - **Estimated Time**: 6 hours
 
-- [ ] **Task 1.5.2**: Implement project initialization
-  - Create new project from selected template
-  - Initialize project data structure
-  - Set up local storage utilities for saving projects
-  - Add project name and metadata handling
+- [ ] **Task 1.4.2**: Render image slot placeholders **[PRIORITY]**
+  - Create visual placeholders for image slots
+  - Handle different slot shapes (rectangle, circle, rounded)
+  - Render slot borders and indicators
+  - Add placeholder icons or text
   - **Estimated Time**: 4 hours
 
-**Week 2 Total**: ~28 hours
+- [ ] **Task 1.4.3**: Create live template preview **[PRIORITY]**
+  - Combine all rendering elements into live preview
+  - Update preview in real-time as templates are selected
+  - Handle rendering performance optimization
+  - Add preview loading states
+  - **Estimated Time**: 6 hours
+
+**Week 2 Total**: ~28 hours **[HIGH PRIORITY VISUAL DEVELOPMENT]**
+
+### Week 3: 🎨 **Enhanced Visual Rendering & Basic Interaction**
+
+#### 1.5 **[MOVED UP]** Advanced Canvas Rendering
+- [ ] **Task 1.5.1**: Implement high-resolution rendering **[PRIORITY]**
+  - Handle high-resolution rendering (300 DPI for print)
+  - Preserve text quality and image sharpness
+  - Handle web fonts in canvas rendering
+  - Optimize rendering performance
+  - **Estimated Time**: 6 hours
+
+- [ ] **Task 1.5.2**: Create quarter-fold layout preview **[PRIORITY]**
+  - Calculate precise panel dimensions for 9"x11" paper
+  - Handle print margins and safe areas
+  - Implement quarter-fold layout positioning
+  - Show complete card layout preview
+  - **Estimated Time**: 5 hours
+
+- [ ] **Task 1.5.3**: Add basic template interaction **[PRIORITY]**
+  - Implement template selection and preview updates
+  - Add simple template gallery with visual previews
+  - Create template switching functionality
+  - Handle template loading states
+  - **Estimated Time**: 5 hours
+
+#### 1.6 **[MOVED UP]** Basic Template Gallery with Visual Previews
+- [ ] **Task 1.6.1**: Build visual template gallery **[PRIORITY]**
+  - Create grid layout with rendered template thumbnails
+  - Implement category filtering (All, Birthday, Holiday, etc.)
+  - Add template search functionality
+  - Generate thumbnails using canvas rendering
+  - **Estimated Time**: 6 hours
+
+- [ ] **Task 1.6.2**: Create template preview system **[PRIORITY]**
+  - Display full template preview on selection
+  - Show all 4 panels with actual content
+  - Add panel navigation (Front → Back → Inside Left → Inside Right)
+  - Implement zoom controls and fit-to-view
+  - **Estimated Time**: 6 hours
+
+**Week 3 Total**: ~28 hours **[VISUAL FOUNDATION COMPLETE]**
 
 ---
 
-## 🎨 Phase 2: Slot Editor (Weeks 3-5)
+## 🎨 Phase 2: Interactive Editing (Weeks 4-6) **[MOVED UP FROM ORIGINAL PHASE 2]**
 
-### Week 3: Text Slot System
+### Week 4: Text Slot Interactive Editing
 
-#### 2.1 Text Slot Foundation
-- [ ] **Task 2.1.1**: Create TextSlot component
-  - Render text slots as overlay on template background
-  - Implement click-to-activate editing
-  - Handle text positioning and sizing based on slot definition
+#### 2.1 Basic Text Editing on Canvas
+- [ ] **Task 2.1.1**: Create editable text slots **[BUILD ON CANVAS]**
+  - Make text slots clickable for editing
+  - Implement inline text editing with canvas updates
+  - Handle text positioning and sizing in real-time
   - Add visual indicators for editable areas
   - **Estimated Time**: 8 hours
 
-- [ ] **Task 2.1.2**: Build text editing interface
-  - Create inline text editor with auto-resize
+- [ ] **Task 2.1.2**: Build text editing interface **[BUILD ON CANVAS]**
+  - Create text editing toolbar
   - Implement character limits per slot
   - Add text validation and error handling
-  - Handle multi-line text support
+  - Update canvas preview in real-time
   - **Estimated Time**: 6 hours
 
-- [ ] **Task 2.1.3**: Add font selection system
+- [ ] **Task 2.1.3**: Add font and formatting controls **[BUILD ON CANVAS]**
   - Implement font dropdown with 5 web-safe fonts
-  - Create font preview functionality
-  - Add font size options (Small, Medium, Large)
-  - Apply font changes in real-time
-  - **Estimated Time**: 5 hours
+  - Create font size options (Small, Medium, Large)
+  - Add color picker for text colors
+  - Apply changes to canvas immediately
+  - **Estimated Time**: 6 hours
 
-#### 2.2 Text Formatting & Colors
-- [ ] **Task 2.2.1**: Create color picker component
-  - Design color palette with 12 predefined colors + B&W
-  - Implement color selection interface
-  - Add color preview and current selection indicator
-  - Apply color changes to text in real-time
-  - **Estimated Time**: 4 hours
-
-- [ ] **Task 2.2.2**: Implement text formatting controls
-  - Create formatting toolbar (font, size, color)
+#### 2.2 Text Formatting & Real-time Updates
+- [ ] **Task 2.2.1**: Advanced text formatting **[BUILD ON CANVAS]**
   - Add text alignment options (left, center, right)
-  - Implement format persistence in project data
-  - Handle formatting conflicts and defaults
-  - **Estimated Time**: 5 hours
-
-**Week 3 Total**: ~28 hours
-
-### Week 4: Image Slot System
-
-#### 2.3 Image Upload & Management
-- [ ] **Task 2.3.1**: Create ImageSlot component
-  - Render image placeholder areas
-  - Implement click-to-upload functionality
-  - Add drag-and-drop support for images
-  - Show upload progress and validation feedback
+  - Implement bold/italic formatting
+  - Handle multi-line text with proper spacing
+  - Maintain formatting in canvas rendering
   - **Estimated Time**: 6 hours
 
-- [ ] **Task 2.3.2**: Build image upload handler
-  - Implement file validation (JPEG/PNG, max 5MB)
-  - Add image compression and optimization
-  - Convert uploaded images to data URLs for storage
-  - Handle upload errors and user feedback
-  - **Estimated Time**: 5 hours
-
-- [ ] **Task 2.3.3**: Implement image auto-fit system
-  - Calculate optimal image sizing for slots
-  - Implement automatic cropping to fit slot dimensions
-  - Handle different aspect ratios gracefully
-  - Add support for circular and rectangular slots
-  - **Estimated Time**: 7 hours
-
-#### 2.4 Image Display & Preview
-- [ ] **Task 2.4.1**: Create image preview system
-  - Display uploaded images in their slots
-  - Implement image loading states
-  - Add image replace functionality
-  - Handle image removal and reset to placeholder
-  - **Estimated Time**: 4 hours
-
-- [ ] **Task 2.4.2**: Add image quality optimization
-  - Implement client-side image resizing
-  - Optimize image formats for print quality
-  - Balance file size vs. print quality
-  - Add image quality preview modes
-  - **Estimated Time**: 6 hours
+- [ ] **Task 2.2.2**: Real-time preview system **[BUILD ON CANVAS]**
+  - Update canvas immediately on text changes
+  - Handle typing performance optimization
+  - Add debounced updates for smooth editing
+  - Implement undo/redo for text changes
+  - **Estimated Time**: 2 hours
 
 **Week 4 Total**: ~28 hours
 
-### Week 5: Panel Navigation & Project Management
+### Week 5: Image Slot Interactive System
 
-#### 2.5 Multi-Panel Editing
-- [ ] **Task 2.5.1**: Implement panel navigation
+#### 2.3 Image Upload & Canvas Integration
+- [ ] **Task 2.3.1**: Create uploadable image slots **[BUILD ON CANVAS]**
+  - Make image slots clickable for upload
+  - Implement drag-and-drop support for images
+  - Show upload progress and validation feedback
+  - Update canvas with new images immediately
+  - **Estimated Time**: 6 hours
+
+- [ ] **Task 2.3.2**: Build image processing pipeline **[BUILD ON CANVAS]**
+  - Implement file validation (JPEG/PNG, max 5MB)
+  - Add image compression and optimization
+  - Convert uploaded images for canvas rendering
+  - Handle different image formats gracefully
+  - **Estimated Time**: 6 hours
+
+- [ ] **Task 2.3.3**: Implement image auto-fit system **[BUILD ON CANVAS]**
+  - Calculate optimal image sizing for slots
+  - Implement automatic cropping to fit slot dimensions
+  - Handle different aspect ratios gracefully
+  - Render images properly in circular and rectangular slots
+  - **Estimated Time**: 8 hours
+
+#### 2.4 Image Display & Management
+- [ ] **Task 2.4.1**: Enhanced image preview **[BUILD ON CANVAS]**
+  - Display uploaded images in their slots on canvas
+  - Implement image loading states
+  - Add image replace/remove functionality
+  - Handle high-quality image rendering
+  - **Estimated Time**: 4 hours
+
+- [ ] **Task 2.4.2**: Image quality optimization **[BUILD ON CANVAS]**
+  - Optimize images for both screen and print
+  - Balance file size vs. print quality
+  - Add image quality preview modes
+  - Handle retina/high-DPI display rendering
+  - **Estimated Time**: 4 hours
+
+**Week 5 Total**: ~28 hours
+
+### Week 6: Project Management & Polish
+
+#### 2.5 Project System Integration
+- [ ] **Task 2.5.1**: Implement project save/load with canvas **[BUILD ON CANVAS]**
+  - Save project data with canvas state
+  - Implement auto-save on changes
+  - Handle project loading with canvas restoration
+  - Add manual save with user feedback
+  - **Estimated Time**: 6 hours
+
+- [ ] **Task 2.5.2**: Multi-panel editing coordination **[BUILD ON CANVAS]**
+  - Coordinate editing across all 4 panels
+  - Handle panel-specific canvas rendering
+  - Implement panel navigation with state preservation
+  - Add cross-panel data consistency
+  - **Estimated Time**: 6 hours
+
+- [ ] **Task 2.5.3**: UI Polish and user experience **[BUILD ON CANVAS]**
+  - Polish the visual interface
+  - Add smooth transitions and animations
+  - Implement responsive design for different screen sizes
+  - Add keyboard shortcuts for common actions
+  - **Estimated Time**: 8 hours
+
+#### 2.6 Advanced Canvas Features
+- [ ] **Task 2.6.1**: Print preview accuracy **[BUILD ON CANVAS]**
+  - Ensure canvas matches final print output
+  - Add print guidelines and fold lines
+  - Implement accurate sizing preview
+  - Add print safe area indicators
+  - **Estimated Time**: 4 hours
+
+- [ ] **Task 2.6.2**: Canvas performance optimization **[BUILD ON CANVAS]**
+  - Optimize canvas re-rendering performance
+  - Implement efficient update strategies
+  - Add canvas caching for complex elements
+  - Handle large image processing efficiently
+  - **Estimated Time**: 4 hours
+
+**Week 6 Total**: ~28 hours
+
+---
+
+## 📄 Phase 3: PDF Generation & Export (Week 7) **[STREAMLINED]**
+
+### Week 7: PDF Export System
+
+#### 3.1 Canvas-to-PDF Pipeline
+- [ ] **Task 3.1.1**: Create PDF export from canvas **[BUILD ON EXISTING CANVAS]**
+  - Integrate jsPDF with existing canvas rendering
+  - Implement proper page setup (landscape, 9"x11")
+  - Add panels in correct quarter-fold arrangement
+  - Handle PDF metadata and properties
+  - **Estimated Time**: 6 hours
+
+- [ ] **Task 3.1.2**: Export interface and controls **[BUILD ON EXISTING CANVAS]**
+  - Create export dialog with options
+  - Add print guidelines toggle
+  - Implement file naming options
+  - Show export progress and completion
+  - **Estimated Time**: 4 hours
+
+#### 3.2 Print Optimization
+- [ ] **Task 3.2.1**: PDF quality optimization **[BUILD ON EXISTING CANVAS]**
+  - Configure optimal image compression settings
+  - Ensure 300 DPI output quality
+  - Minimize PDF file size while maintaining quality
+  - Add quality vs size options
+  - **Estimated Time**: 4 hours
+
+- [ ] **Task 3.2.2**: Print guidelines and layout **[BUILD ON EXISTING CANVAS]**
+  - Add fold lines and cut marks
+  - Create optional guideline overlay
+  - Handle guideline on/off toggle
+  - Add print instruction generation
+  - **Estimated Time**: 4 hours
+
+#### 3.3 Export Polish
+- [ ] **Task 3.3.1**: Export user experience **[BUILD ON EXISTING CANVAS]**
+  - Add accurate print preview
+  - Show actual print dimensions
+  - Implement zoom controls for preview
+  - Handle export errors gracefully
+  - **Estimated Time**: 4 hours
+
+- [ ] **Task 3.3.2**: Final export testing **[BUILD ON EXISTING CANVAS]**
+  - Test print output quality on real printers
+  - Validate PDF compatibility across viewers
+  - Test file size and download performance
+  - Document print instructions for users
+  - **Estimated Time**: 6 hours
+
+**Week 7 Total**: ~28 hours
+
+---
+
+## 🚀 Phase 4: Polish & Launch (Weeks 8-9) **[UNCHANGED]**
   - Create tab-based panel switching
   - Add visual indicators for panel completion status
   - Implement panel-specific editing context

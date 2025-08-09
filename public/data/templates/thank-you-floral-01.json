@@ -1,0 +1,221 @@
+{
+  "id": "thank-you-floral-01",
+  "name": "Floral Thank You",
+  "category": "thank-you",
+  "description": "Elegant thank you card with soft floral design and heartfelt message",
+  "thumbnail": "/assets/templates/thumbnails/thank-you-floral-01.jpg",
+  "author": "Greeting Card Creator",
+  "createdAt": "2025-08-09T00:00:00Z",
+  "panels": {
+    "front": {
+      "id": "front",
+      "name": "Front Cover",
+      "background": {
+        "type": "gradient",
+        "value": "linear-gradient(45deg, #fef7cd 0%, #fbbf24 100%)",
+        "opacity": 0.8
+      },
+      "dimensions": {
+        "width": 1275,
+        "height": 1650
+      },
+      "textSlots": [
+        {
+          "id": "front-thank-you",
+          "placeholder": "Thank You",
+          "position": {
+            "x": 150,
+            "y": 600
+          },
+          "size": {
+            "width": 975,
+            "height": 120
+          },
+          "maxLength": 30,
+          "defaultFont": "Georgia",
+          "defaultSize": "extra-large",
+          "defaultColor": "#92400E",
+          "textAlign": "center",
+          "lineHeight": 1.2
+        }
+      ],
+      "imageSlots": [
+        {
+          "id": "front-floral-top",
+          "position": {
+            "x": 300,
+            "y": 150
+          },
+          "size": {
+            "width": 675,
+            "height": 300
+          },
+          "shape": "rectangle",
+          "placeholder": "Floral decoration (top)",
+          "aspectRatio": "free",
+          "allowedFormats": ["png", "webp"],
+          "maxFileSize": 3145728
+        },
+        {
+          "id": "front-floral-bottom",
+          "position": {
+            "x": 300,
+            "y": 1200
+          },
+          "size": {
+            "width": 675,
+            "height": 300
+          },
+          "shape": "rectangle",
+          "placeholder": "Floral decoration (bottom)",
+          "aspectRatio": "free",
+          "allowedFormats": ["png", "webp"],
+          "maxFileSize": 3145728
+        }
+      ]
+    },
+    "back": {
+      "id": "back",
+      "name": "Back Cover",
+      "background": {
+        "type": "color",
+        "value": "#FFFBEB",
+        "opacity": 1
+      },
+      "dimensions": {
+        "width": 1275,
+        "height": 1650
+      },
+      "textSlots": [],
+      "imageSlots": []
+    },
+    "insideLeft": {
+      "id": "insideLeft",
+      "name": "Inside Left",
+      "background": {
+        "type": "color",
+        "value": "#FFFFFF",
+        "opacity": 1
+      },
+      "dimensions": {
+        "width": 1275,
+        "height": 1650
+      },
+      "textSlots": [
+        {
+          "id": "inside-left-message",
+          "placeholder": "Your kindness and thoughtfulness mean so much to me. I am truly grateful for everything you have done.",
+          "position": {
+            "x": 100,
+            "y": 400
+          },
+          "size": {
+            "width": 1075,
+            "height": 500
+          },
+          "maxLength": 250,
+          "defaultFont": "Georgia",
+          "defaultSize": "medium",
+          "defaultColor": "#374151",
+          "textAlign": "left",
+          "lineHeight": 1.7
+        },
+        {
+          "id": "inside-left-gratitude",
+          "placeholder": "With heartfelt appreciation",
+          "position": {
+            "x": 100,
+            "y": 1100
+          },
+          "size": {
+            "width": 1075,
+            "height": 100
+          },
+          "maxLength": 50,
+          "defaultFont": "Georgia",
+          "defaultSize": "medium",
+          "defaultColor": "#92400E",
+          "textAlign": "left",
+          "lineHeight": 1.4
+        }
+      ],
+      "imageSlots": []
+    },
+    "insideRight": {
+      "id": "insideRight",
+      "name": "Inside Right",
+      "background": {
+        "type": "color",
+        "value": "#FFFFFF",
+        "opacity": 1
+      },
+      "dimensions": {
+        "width": 1275,
+        "height": 1650
+      },
+      "textSlots": [
+        {
+          "id": "inside-right-personal-note",
+          "placeholder": "Thank you for being such a wonderful friend. Your support and encouragement have made all the difference.",
+          "position": {
+            "x": 100,
+            "y": 300
+          },
+          "size": {
+            "width": 1075,
+            "height": 400
+          },
+          "maxLength": 200,
+          "defaultFont": "Georgia",
+          "defaultSize": "medium",
+          "defaultColor": "#374151",
+          "textAlign": "left",
+          "lineHeight": 1.7
+        },
+        {
+          "id": "inside-right-signature",
+          "placeholder": "With love and gratitude,\n[Your Name]",
+          "position": {
+            "x": 100,
+            "y": 1200
+          },
+          "size": {
+            "width": 1075,
+            "height": 150
+          },
+          "maxLength": 80,
+          "defaultFont": "Georgia",
+          "defaultSize": "medium",
+          "defaultColor": "#374151",
+          "textAlign": "right",
+          "lineHeight": 1.5
+        }
+      ],
+      "imageSlots": [
+        {
+          "id": "inside-right-small-flower",
+          "position": {
+            "x": 100,
+            "y": 900
+          },
+          "size": {
+            "width": 200,
+            "height": 200
+          },
+          "shape": "circle",
+          "placeholder": "Small floral accent",
+          "aspectRatio": "square",
+          "allowedFormats": ["png", "webp"],
+          "maxFileSize": 1048576
+        }
+      ]
+    }
+  },
+  "metadata": {
+    "version": "1.0.0",
+    "tags": ["thank-you", "floral", "elegant", "gratitude", "appreciation"],
+    "difficulty": "intermediate",
+    "estimatedTime": 12,
+    "colorScheme": ["#fef7cd", "#fbbf24", "#92400E", "#374151", "#FFFFFF"]
+  }
+}
